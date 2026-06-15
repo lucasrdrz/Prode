@@ -16,18 +16,7 @@ predicciones = pd.read_csv(url_predicciones)
 st.subheader("📅 Partidos")
 st.dataframe(partidos)
 
-# DEBUG
-st.subheader("🔍 Debug Predicciones")
 
-st.write("Columnas predicciones:")
-st.write(predicciones.columns.tolist())
-
-st.write("Partido ID 7:")
-st.dataframe(
-    predicciones[
-        predicciones["Partido_ID"] == 7
-    ]
-)
 
 # Filtrar solo partidos con resultado cargado
 partidos_jugados = partidos.dropna(subset=["Resultado"])
