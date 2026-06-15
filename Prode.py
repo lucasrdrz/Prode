@@ -51,20 +51,3 @@ tabla = (
 
 st.subheader("🏆 Tabla de posiciones")
 st.dataframe(tabla)
-
-# DEBUG DETALLADO
-st.subheader("🔍 Detalle completo")
-
-st.dataframe(
-    df[
-        [
-            "Usuario",
-            "Partido_ID",
-            "Local",
-            "Visitante",
-            "Resultado",
-            "Prediccion",
-            "Puntos"
-        ]
-    ]
-)
